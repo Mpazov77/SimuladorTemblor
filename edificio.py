@@ -3,6 +3,8 @@ Edificio - Building class for earthquake simulator
 Represents an 11-level building structure
 """
 
+import math
+
 
 class Nivel:
     """Represents a single level/floor of the building"""
@@ -53,8 +55,6 @@ class Edificio:
         Args:
             intensidad (float): Earthquake intensity (0.0 to 10.0 Richter scale)
         """
-        import math
-        
         # Higher levels experience more displacement
         for i, nivel in enumerate(self.niveles):
             # Displacement increases with height and intensity

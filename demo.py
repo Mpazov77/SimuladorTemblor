@@ -4,7 +4,6 @@ Demo script to showcase the 11-level building and earthquake simulation
 """
 
 from edificio import Edificio
-import time
 
 
 def main():
